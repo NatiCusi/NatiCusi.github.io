@@ -1,0 +1,177 @@
+.container{
+	max-width: 840px;
+	margin: 0 auto;
+}
+.container > div{
+	margin: 20px auto
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: #d9d9d9;
+  
+}
+
+h1, h2, h3, h4{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #03989e;
+}
+ 
+ #R{
+ 	text-align: center;
+ }
+.intro{
+	text-align: center;
+}
+.profileIMG{
+	border-radius: 50%;
+	width: 150px;
+  height: 250px;
+  box-shadow: 0 6px 6px 0px rgba(34, 60, 80, .16);
+  transition: all ease-in-out .2s;
+}
+
+.profileIMG:hover {
+  box-shadow: 0 8px 12px 12px rgba(34,60,80,.16);
+}
+
+.about-grid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 480px) {
+  .about-grid {
+    grid-template-columns: 100%;
+  }  
+}
+
+.I-like, .I-am {
+	text-align: center;
+}
+
+.about-list  {
+	list-style: none;
+	padding: 0;
+}
+
+.projects{
+	text-align: center;
+}
+
+.projects-grid1{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+
+ 
+.imgPROJECT{
+	justify-self: center;
+  padding: 2%;
+	text-align: center;
+}
+@media (max-width: 650px) {
+	.projects-grid1{
+	  	grid-template-columns: 100%;
+	 }
+}
+.projects-grid2{
+	display: grid;
+	grid-template-columns: 100%
+} 
+
+
+.imgPROJECT{
+	box-shadow: 0 6px 6px 0px rgba(34, 60, 80, .16);
+  transition: all ease-in-out .2s;
+
+}
+
+.imgPROJECT:hover {
+  filter: brightness(.5);
+  box-shadow: 0 8px 12px 12px rgba(34,60,80,.16);
+}
+#IMG4, #IMG3, #IMG5{
+	justify-self: center;
+}
+
+.project-image-wrapper {
+	justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.project-image-wrapper:hover > h4 {
+	visibility: visible;
+}
+
+.project-image-wrapper > h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
+}
+
+.links-and-contact {
+		display: grid;
+	grid-template-columns: 30% 70%;
+	
+	}
+
+.links{
+	justify-self: safe left;
+	text-align: left;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.LinksCont{
+
+	justify-self: safe left;
+	text-align: left;
+
+}
+
+form input, textarea {
+	padding: 5px;
+	border-radius: 5px;
+	width: 240px;
+
+}
+
+form {
+	width: 250px;
+	margin: 0 auto;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+}
+form input[type="submit"] {
+	width: 250px;
+	background-color: #03989e;
+}
+
+.submit-button-wrapper {
+	margin: 20px 0;
+
+}
+
+
+
+@media (max-width: 650px) {
+  .links-and-contact {
+    grid-template-columns: 100%;
+  }
+}
